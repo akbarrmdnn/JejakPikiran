@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html,
+body{
+    margin:0px;
+    padding:0px;
+    font-size: 16px;
+    font-family: "Poppins", serif;
+  
+}
+/* menu */
+nav{
+    background-color:  #000000;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.wrapper{
+    width: 1024px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+    display: flex;
+}
+
+nav > .wrapper{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1,2rem;
+    align-items: center;
+}
+
+.menu{
+    width: 50%;
+    
+}
+
+.menu > ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.menu > ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+
+.logo > img{
+    height: 65px;
+
+}
+
+/* jumbotron */
+header {
+    background: url("/img/BG.jpg");
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: "Kanit", serif;
+
+
+}
+
+.header-opacity{
+   background-color: #000000;
+   width: 100%;
+   height: 100%;
+   opacity: 0.7;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.header-jumbotron{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction:column;
+    text-align:center;
+}
+
+.header-jumbotron > h1{
+    color: #F8FAFC;
+    font-size: 2rem;
+    padding: 0px;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 5px;
+
+}
+
+.header-jumbotron > h5{
+    color: white;
+    font-size: 1.5rem;
+    padding: 5px;
+    margin: 0px;
+    line-height: 4rem;
+    text-transform: uppercase;
+}
+
+.header-jumbotron > p{
+    color:#FFF5E4;
+    font-size: 1.6rem;
+    margin: 0px;
+    padding: 3px;
+    line-height: 3rem;
+    text-transform: lowercase;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.button{
+    background-color: #C62300;
+    padding: 3px 12px 3px 12px;
+    border-radius: 10px;
+    font-family: "Poppins", serif;
+}
+
+.button-xl{
+    font-size: 1.3rem;
+}
+
+/* statistic */
+/* Mengatur tampilan container */
+#stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  /* Mengatur tampilan setiap item statistik */
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  /* Styling ikon Font Awesome */
+  .stat-item i {
+    font-size: 30px;
+    color: #333;
+  }
+  
+  /* Styling angka */
+  .number {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+/* konten */
+#konten{
+    background-color: #000000;
+    width:100%;
+} 
+
+.container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    opacity: 1.5;
+}
+
+.container .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background-color: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover{
+    height: 420px;
+}
+
+.container .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow:0 5px 20px rgba(0, 0, 0, 0.5) ;
+}
+
+.container .card .imgBx > img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition:  0.3s ease-in-out;;
+}
+
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+#konten{
+    background-color: #000000;
+    opacity: 3;
+    width: 100%;
+    padding: 40px;
+    font-family: "Kanit", serif;
+    font-size: 2.5rem;
+}
+
+#konten > h4{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", serif;
+}
+
+.content > p{
+    font-size: 1rem;
+}
+
+.button-k{
+    background-color: #212121;
+    padding: 2px 9px 2px 9px;
+    border-radius: 10px;
+    font-family: "Poppins", serif;
+    font-size: 1.5rem;
+    margin: 30px 20px;
+}
+
+/* tentang */
+#tentang{
+    background-color: #eeeeee;
+    width:100%;
+}
+
+#tentang > .wrapper-t{
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+
+#tentang > .wrapper-t > h4{
+    color: #1D1616;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", serif;
+}
+
+#tentang > .wrapper-t > p{
+    color: #000000;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 40px;
+}
+
+#tentang > .wrapper-t > div{
+    display: flex;
+    margin: auto;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+#tentang > .wrapper-t > div > .foto{
+    width: 30%;
+}
+
+#tentang > .wrapper-t > div > .foto > img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#tentang > .wrapper-t > div > .deskripsi{
+    width: 70%;
+    padding: 20px;
+    margin: 10px;
+    color: black;
+    background-color: #fff;
+    border-radius: 10px;
+} 
+
+#tentang > .wrapper-t > div > .deskripsi > p{
+    margin: 0px 0px 10px 1px;
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+
+#tentang > .wrapper-t > div > .deskripsi > .social{
+    display: flex;
+    width: 30%;
+}
+
+#tentang > .wrapper-t > div > .deskripsi > .social > a{
+    color: black;
+    padding-right: 10px;
+    font-size: 1.3rem;
+}
+
+/*footer*/
+footer{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+
+footer > .wrapper-f{
+    padding: 30px 0px 30px 0px;
+}
+
+/* 1024 900 768 450 */
+@media only screen and (max-width: 1024px) {
+    .wrapper{
+        width: 90%;
+    }
+    .stat-item{
+        width: 90%;
+    }
+    .wrapper-t{
+        width: 90%;
+    }
+    .wrapper-f{
+        width: 90%;
+    }
+    .menu{
+        width: 60%;
+        margin-right: 35px;
+    }
+}
+
+ @media only screen and (max-width: 900px){
+    #stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .stat-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+  
+    .stat-item i {
+        font-size: 2rem;
+        margin-right: 10px;
+    }
+  
+    .number {
+        margin-top: 0;
+    }
+    #konten{
+        flex-direction: column;
+        align-items: center;
+    }
+    #konten > .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px 5px 10px 5px;
+    }
+    #konten > .container > .card{
+        padding-bottom: 20px;
+    }
+    #konten > h4{
+        padding-bottom: 30px;
+    }
+    #tentang > .wrapper-t > div > .foto{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .header-jumbotron > h4{
+        font-size: 1.4rem;
+    }
+    .header-jumbotron > h5{
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+    }
+    .header-jumbotron > p{
+        font-size: 1.1rem;
+    }
+    .button{
+        padding: 5px;
+    }
+    .button-xl{
+        font-size: 1.4rem;
+        padding: 10px;
+    }
+    .stat-item i{
+        font-size: 1.8rem;
+    }
+    .menu{
+        width: 60%;
+    }
+    #tentang > .wrapper-t > div > .foto{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .header-jumbotron > h5{
+        font-size: 1.4rem;
+    }
+    .header-jumbotron > p{
+        font-size: 1.1rem;
+    }
+    #tentang > .wrapper-t > div{
+        width: 100%;
+        flex-direction: column;
+    }
+    #tentang > .wrapper-t > div > .foto{
+        width: 80%;
+        margin-top: 60px;
+    }
+    #tentang > .wrapper-t > div > .foto > img{
+        max-width: 100%;
+    }
+    #tentang > .wrapper-t > div > .deskripsi{
+        width: 70%;
+        padding-bottom: 30px;
+    }
+    
+}
+
+
+
