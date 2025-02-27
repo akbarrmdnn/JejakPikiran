@@ -62,7 +62,7 @@ nav > .wrapper{
 
 /* jumbotron */
 header {
-    background: url("/img/BG.jpg");
+    background: url("img/BG.jpg");
     height: 100vh;
     background-position: center center;
     background-size: cover;
